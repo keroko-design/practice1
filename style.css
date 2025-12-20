@@ -11,12 +11,12 @@
   
     /* ===== Gradient ===== */
     --gradient-btn: linear-gradient(
-      90deg,
+      to bottom,
       #F4A8AD 0%,
       #E35B59 100%
     );
     --gradient-btn-line: linear-gradient(
-      90deg,
+      to bottom,
       #E35B59 0%,
       #F4A8AD 100%
     );
@@ -36,6 +36,7 @@
     /* ===== Font Weight ===== */
     --fw-light: 300; 
     --fw-regular: 400; 
+    --fw-midium: 500; 
     --fw-bold: 700; 
 
     /* ===== Line Height ===== */
@@ -88,68 +89,143 @@ body{
 }
 
 .c-cta-microcopy {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+    font-size: var(--fs-h2);
+    font-weight: var(--fw-midium);
 
 }
+.c-cta-microcopy img {
+    display: block;
+    height: 24px;
+    width: auto;
+  }
 
 .c-btn {
-    background: linear-gradient(to bottom, #F4A8AD, #E35B59);
-    padding: 16px 16px ;
-    border-radius: 100px;
-    color: white;
+    border: 4px solid transparent;
+    border-radius: 999px;
+    background:
+        var(--gradient-btn) padding-box,
+        var(--gradient-btn-line) border-box;
+    color: #fff;
+    padding: 8px 16px;
     font-size: 27px;
-    font-weight: var(--fw-bold);
+    font-weight: var(--fw-midium);
+    width: 80%;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
-.c-btn--primary {
-
-}
-
-
-/* =========================================
-   Header
-========================================= */
-.header-logo {
-    padding-top: 24px;
-
-}
-
-.header-logo img{
-    width:80px ;
-}
+.c-btn::after{
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 0 6px 10px;     /* 高さ:12px / 幅:10px */
+    border-color: transparent transparent transparent #fff; /* 右向き */
+  }
 
 /* =========================================
    FV
 ========================================= */
 .p-fv {
+    background-image:url(../img/mv_background.jpg);
+    width: 100%;
+    height: 696px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+
+.p-f__logo{
+    padding: 24px 0 56px 0;
+    width:80px ;
 
 }
 .p-fv__heading {
-
+    
+    
 }
+
+
 .p-fv__subtitle {
+    font-size: var(--fs-h2);
+    line-height: var(--lh-relaxed);
 
 }
 .p-fv__subtitle-highlight {
+    font-size: 32px;
+    position: relative;
+    display: inline-block; /* 下線の幅を文字に合わせる */
+    z-index: 0;
 
 }
-.p-fv__title {
 
+.p-fv__subtitle-highlight::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0.1em; 
+    width: 100%;
+    height: 0.6em; 
+    background: url("./img/mv_accentline.svg") no-repeat left bottom / 100% 100%;
+    z-index: -1;
+    pointer-events: none;
+  }
+
+.p-fv__title {
+    font-size: 50px;
+    display: inline-block;
+    transform: skew(-7deg);
+    margin: 0 0 40px 0;
+      
 }
 
 .p-fv__features {
+    width: 168px;
+    padding: 16px 0;
+    background-image:
+      radial-gradient(circle, #808080 1.5px, transparent 1px),
+      radial-gradient(circle, #808080 1.5px, transparent 1px);
+    background-size: 8px 8px;
+    background-repeat: repeat-x;
+    background-position: left top, left bottom;
 
 }
 .p-fv__features-list {
+    
+    
 
 }
 .p-fv__features-item {
-
+    display: flex;
+    flex-direction: row;
+    color: var(--color-accent-pink);
+    gap: 8px ;
+    padding: 4px 0;
 }
 
 .p-fv__cta {
-
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    
 }
+
 .p-fv__cta-inner {
+   
 
 }
 .p-fv__microcopy {
