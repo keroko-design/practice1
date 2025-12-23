@@ -160,6 +160,7 @@ body{
 .p-fv__subtitle {
     font-size: var(--fs-h2);
     line-height: var(--lh-relaxed);
+    letter-spacing: 0.15em;
 
 }
 .p-fv__subtitle-highlight {
