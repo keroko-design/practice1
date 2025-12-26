@@ -273,7 +273,7 @@ sections
 .p-features__list{
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 32px;
 
 }
 .p-features__item{
