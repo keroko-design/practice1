@@ -60,13 +60,20 @@ body{
     letter-spacing: var(--ls-base);
 
 }
+
+body p{
+    color: #333333;
+}
+
 .has-fixed-bg {
     background-image: url(img/background.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    background-attachment: fixed; 
+    
 }
 
 .l-wrapper {
@@ -132,6 +139,23 @@ body{
     border-color: transparent transparent transparent #fff; /* 右向き */
   }
 
+  .c-section-title{
+    margin-bottom: 24px;
+
+  }
+  .c-section-title__en{
+    text-align: center;
+    font-size: var(--fs-point);
+    font-family: var(--font-en);
+    color: var(--color-heading-en);
+  }
+  .c-section-title__ja{
+    text-align: center;
+    font-size: var(--fs-h2);
+    color: var(--color-heading-ja);
+    font-weight: var(--fw-midium);
+  }
+
 /* =========================================
    FV
 ========================================= */
@@ -146,7 +170,7 @@ body{
 
 }
 
-.p-f__logo{
+.p-fv__logo{
     padding: 24px 0 56px 0;
     width:80px ;
 
@@ -166,7 +190,7 @@ body{
 .p-fv__subtitle-highlight {
     font-size: 32px;
     position: relative;
-    display: inline-block; /* 下線の幅を文字に合わせる */
+    display: inline-block;
     z-index: 0;
 
 }
@@ -236,27 +260,116 @@ body{
 /* ============================================== 
 sections
 ============================================== */
+/* features */
 .p-features {
+    background-color: #FFFCF3;
+    padding: 40px 0;
 
 }
+.p-features__container{
+
+}
+
+.p-features__list{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+}
+.p-features__item{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    padding-left: 20px;
+
+}
+
+.p-features__item--reverse{
+    display: flex;
+    flex-direction: row-reverse;
+    padding:0 20px 0 0;
+    
+
+}
+
+.p-features__content{
+
+}
+
+.p-features__num{
+    font-family: var(--font-en);
+    color: #F1F1F1;
+    font-size: 64px;
+    font-weight: var(--fw-light);
+    font-style: italic;
+    margin-bottom: -24px;
+
+}
+
+.p-features__title{
+    color: var(--color-heading-ja);
+    margin-bottom: 8px;
+
+}
+
+.p-features__text{
+
+}
+
+.p-features__media{
+    width: 196px;
+    height: 160px;
+    border-radius: 80px 0 0 80px;
+    overflow: hidden; 
+    box-shadow: 0 8px 16px rgba(124, 124, 124, 0.1);
+
+}
+
+.p-features__item--reverse .p-features__media{
+    border-radius: 0 80px 80px 0;
+  }
+  
+.p-features__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;     
+
+}
+
+/* who it fits */
 .p-whoitfits {
 
 }
+
+/* flow */
 .p-flow {
 
 }
+
+/* trainer */
 .p-trainer {
 
 }
+
+/* voice */
 .p-voice {
 
 }
+
+/* faq */
 .p-faq {
 
 }
+
+/* offer */
 .p-offer {
 
 }
+
+/* access */
 .p-access {
 
 }
