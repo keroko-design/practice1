@@ -177,6 +177,8 @@ body ul{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
+    
     position: relative;
 
 }
@@ -406,7 +408,101 @@ sections
 
 /* flow */
 .p-flow {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 0;
 
+}
+
+.p-flow__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 40px;
+  
+
+}
+
+.p-flow__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+
+.p-flow__badge {
+  color: var(--color-heading-ja);
+  line-height: 150%;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--font-en);
+  background-color: var(--color-gray-light);
+  border-radius: 200px;
+  z-index: 10;
+  padding-top: 5px;
+
+}
+
+.p-flow__step-label {
+  font-size: var(--fs-small);
+
+}
+
+.p-flow__step-num {
+  font-size: 2rem;
+
+}
+
+.p-flow__card {
+  max-width: 296px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(124, 124, 124, 0.1);
+  margin-top: -32px;
+  
+
+}
+
+.p-flow__media {
+  
+ 
+
+}
+
+.p-flow__img {
+  border-radius: 5px 5px 0 0;
+
+}
+
+.p-flow__title {
+  color: var(--color-heading-ja);
+  padding: 16px 0 8px 0;
+
+}
+
+.p-flow__text {
+  padding-bottom: 16px;
+
+}
+
+.flow-arrow {
+  width: 0;
+  height: 0;
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+  border-top: 20px solid #D4E7EC; 
+  margin: 16px auto;
+}
+
+.p-flow .c-btn{
+  margin-top: 40px;
+  width: 100%;
 }
 
 /* trainer */
