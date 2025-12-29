@@ -7,7 +7,8 @@
     --color-heading-en: #B7D9E2;
     --color-gray-light: #F1F1F1; 
     --color-text-base: #333333; 
-    --color-accent-pink: #E35B59; 
+    --color-accent-pink: #E35B59;
+		--color-cream:#FFFCF3;
   
     /* ===== Gradient ===== */
     --gradient-btn: linear-gradient(
@@ -65,6 +66,9 @@ body p{
     color: #333333;
 }
 
+body ul{
+	color: #333333;
+}
 .has-fixed-bg {
     background-image: url(img/background.jpg);
     background-size: cover;
@@ -341,7 +345,56 @@ sections
 
 /* who it fits */
 .p-whoitfits {
+	background-color: var(--color-cream);
+}
 
+.c-balloon-title{
+	background-image: url(img/whoitfits_h2_bk.svg);
+	position: relative;
+  padding: 16px 24px 24px 24px; /* 吹き出しの内側余白 */
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 100% 100%;
+	z-index: 10;
+}
+
+
+
+
+.p-whoitfits .container{
+	background-image: url(./img/whoitfits_background.jpg);
+	width: 100%;
+	height: auto;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	
+}
+
+.p-whoitfits__list{
+	margin-top: -80px;
+	padding: 80px 40px;
+
+}
+
+.p-whoitfits__item{
+	display: flex;
+	align-items: flex-start;
+	font-size: var(--fs-point);
+	font-weight: var(--fw-midium);
+	padding: 16px 0;
+	border-bottom: 4px dotted #D2D2D2;
+	max-width: 180px;
+
+}
+
+.p-whoitfits__item:last-child{
+  border-bottom: none;
+}
+
+.p-whoitfits__item .c-icon-check{
+	margin: 5px 8px 0 0;
 }
 
 /* flow */
