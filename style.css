@@ -592,11 +592,63 @@ sections
 }
 
 
-
-
 /* voice */
 .p-voice {
+  padding: 40px 0;
 
+}
+
+.p-voice {
+
+}
+
+.p-voice__list {
+  margin-top: 16px;
+
+}
+
+.p-voice__item {
+  display: flex;
+  border-bottom: 4px dotted #D4E7EC;
+  padding: 24px 0;
+  gap: 16px;
+  align-items: center;
+
+}
+
+.p-voice__item--reverse{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.p-voice__img{
+  width: 96px;
+  height: auto;
+}
+
+.p-voice__content {
+  
+
+}
+
+.p-voice__text {
+  color: var(--color-heading-ja);
+  font-weight: var(--fw-midium);
+  text-align: justify;
+  margin-bottom: 8px;
+  line-height: 1.5;
+
+}
+
+.p-voice__name {
+  font-size: var(--fs-small);
+  font-weight: var(--fw-regular);
+
+}
+
+.p-voice .c-btn{
+  margin-top: 40px;
+  width: 100%;
 }
 
 /* faq */
