@@ -507,8 +507,92 @@ sections
 
 /* trainer */
 .p-trainer {
+  background-color: #F0F9FB;
+  padding: 40px 0;
 
 }
+
+.p-trainer__list {
+  margin-top: 40px;
+  
+}
+
+.p-trainer__item {
+  padding: 24px 24px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 8px 16px rgba(124, 124, 124, 0.1);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.p-trainer__img {
+  width: 208px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.p-trainer__info {
+
+}
+
+.p-trainer__name {
+  font-size: var(--fs-h3);
+  font-weight: var(--fw-bold);
+  text-align: center;
+  margin-bottom: 4px;
+
+}
+
+.p-trainer__position {
+  font-size: var(--fs-small);
+  font-weight: var(--fw-midium);
+
+}
+
+.p-trainer__career {
+  font-size: var(--fs-small);
+  text-align: center;
+
+}
+
+.p-trainer__message-title {
+  color: #B7D9E2;
+  text-align: center;
+  font-size: var(--fs-h3);
+  font-family: var(--font-en);
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+}
+
+.p-trainer__message-title::before,
+.p-trainer__message-title::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-image: radial-gradient(
+    circle, #B7D9E2 1.5px, transparent 1.5px
+  );
+  background-size: 8px 1px;
+  background-repeat: repeat-x;
+}
+
+.p-trainer__message-text {
+  line-height: var(--lh-relaxed);
+  text-align: justify;
+  font-size: var(--fs-small);
+  letter-spacing: 0.05em;
+}
+
+
+
 
 /* voice */
 .p-voice {
