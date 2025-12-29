@@ -1,6 +1,10 @@
 /* =========================================
    Design Tokens
 ========================================= */
+html{
+  font-size: 16px;
+}
+
 :root {
     /* ===== Color ===== */
     --color-heading-ja: #3895AC; 
@@ -27,12 +31,12 @@
     --font-en: Optima, "Helvetica Neue", Arial, sans-serif;
 
     /* ===== font size ===== */
-    --fs-h2: 24px; 
-    --fs-h3: 18px; 
-    --fs-point: 20px; 
-    --fs-body: 16px;
-    --fs-small: 14px;
-    --fs-mini: 12px;
+    --fs-h2: 1.5rem;      /* 24px */
+    --fs-h3: 1.125rem;    /* 18px */
+    --fs-point: 1.25rem;  /* 20px */
+    --fs-body: 1rem;      /* 16px */
+    --fs-small: 0.875rem; /* 14px */
+    --fs-mini: 0.75rem;   /* 12px */
 
     /* ===== Font Weight ===== */
     --fw-light: 300; 
@@ -53,12 +57,11 @@
    Layout/common
 ========================================= */
 body{
-    display: flex;
-    justify-content: center;
     font-family: var(--font-base);
     font-weight: var(--fw-regular);
     line-height: var(--lh-base);
     letter-spacing: var(--ls-base);
+    margin: 0;
 
 }
 
@@ -69,6 +72,7 @@ body p{
 body ul{
 	color: #333333;
 }
+
 .has-fixed-bg {
     background-image: url(img/background.jpg);
     background-size: cover;
@@ -81,8 +85,11 @@ body ul{
 }
 
 .l-wrapper {
-    max-width: 750px;
+    max-width: 375px;
     background-color: white;
+    /* display: flex;
+    justify-content: center; */
+    margin: 0 auto;
 
 }
 .container {
@@ -192,7 +199,7 @@ body ul{
 
 }
 .p-fv__subtitle-highlight {
-    font-size: 32px;
+    font-size: 2rem;
     position: relative;
     display: inline-block;
     z-index: 0;
@@ -212,10 +219,10 @@ body ul{
   }
 
 .p-fv__title {
-    font-size: 50px;
+    font-size: 2.625rem;
     display: inline-block;
     transform: skew(-7deg);
-    margin: 0 0 40px 0;
+    margin: 16px 0 40px 0;
       
 }
 
@@ -245,7 +252,7 @@ body ul{
 
 .p-fv__cta {
     position: absolute;
-    bottom: 20px;
+    bottom: 24px;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
