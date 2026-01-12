@@ -756,8 +756,149 @@ sections
 
 /* offer */
 .p-offer {
+  padding: 40px 0;
+  background-image: url(./img/offer_background.jpg);
+  width: 100%;
+	height: auto;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 
 }
+
+.p-offer .c-section-title__ja{
+  color: var(--color-text-base);
+  font-size: 32px;
+
+}
+.p-offer-title__ja-highlight{
+  font-size: var(--fs-h2);
+}
+
+.p-offer__price {
+
+}
+
+.p-offer__title {
+  display: block;
+  padding: 8px 16px;
+  background: var(--gradient-btn);
+  color: #fff;
+  font-size: var(--fs-h2);
+  text-align: center;
+  font-weight: var(--fw-regular);
+}
+
+.p-offer__content-price {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 24px 16px;
+
+}
+
+.p-offer__price-original{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.p-offer__price-meta {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+}
+
+.p-offer__price-label {
+  font-family: var(--font-en);
+  font-size: var(--fs-small);
+
+}
+
+.p-offer__price-yen {
+  font-size: var(--fs-h2);
+
+}
+
+.p-offer__price-amount {
+  font-family: var(--font-en);
+  font-size: 62px;
+  line-height: 1;
+
+}
+
+.p-offer__price-arrow {
+  width: 0;
+  height: 0;
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+  border-top: 20px solid #3895AC; 
+  margin: 16px auto;
+  
+
+}
+
+.p-offer__price-special {
+
+}
+
+.p-offer__price-badge {
+  display: inline-block;
+  padding: 8px;
+  width: 80px;
+  height: 80px;
+  font-size: var(--fs-point);
+  text-align: center;
+  color: #fff;
+  background-color: var(--color-accent-pink);
+  border-radius: 200px;
+
+}
+
+.p-offer__price-yen--free {
+  font-size: 52px;
+  font-family: var(--font-en);
+
+}
+
+.p-offer__price-amount--free {
+  font-size: 120px;
+  font-family: var(--font-en);
+
+}
+
+.p-offer__bonus {
+  color: var(--color-accent-pink);
+  font-size: var(--fs-h3);
+  text-align: center;
+  letter-spacing: 0;
+
+}
+
+.p-offer__note {
+  font-size: var(--fs-small);
+  text-align: center;
+  margin-top: 16px;
+}
+
+.p-offer__cta {
+  width: 100%;
+  text-align: center;
+  
+}
+
+.p-offer__cta-inner {
+
+}
+
+.p-offer__microcopy {
+
+}
+
+
+
 
 /* access */
 .p-access {
