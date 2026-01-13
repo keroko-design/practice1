@@ -785,8 +785,8 @@ sections
   background: var(--gradient-btn);
   color: #fff;
   font-size: var(--fs-h2);
+  font-weight: var(--fw-midium);
   text-align: center;
-  font-weight: var(--fw-regular);
 }
 
 .p-offer__content-price {
@@ -798,10 +798,26 @@ sections
 .p-offer__price-original{
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
   gap: 8px;
   margin-top: 16px;
+  position: relative;
+}
+
+.p-offer__price-original::after{
+  content: "";
+  position: absolute;
+  left: 48px; 
+  right: 48px;
+  top: 50%;
+  height: 2px;
+  background: var(--color-accent-pink); /* 赤（トークンあればそれ） */
+  transform: translateY(-50%) rotate(-12deg);
+  border-radius: 999px; /* 角丸にして自然に */
+  pointer-events: none;
+
+
 }
 
 .p-offer__price-meta {
@@ -841,32 +857,50 @@ sections
 }
 
 .p-offer__price-special {
-
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
 }
 
 .p-offer__price-badge {
-  display: inline-block;
   padding: 8px;
   width: 80px;
   height: 80px;
-  font-size: var(--fs-point);
-  text-align: center;
-  color: #fff;
   background-color: var(--color-accent-pink);
   border-radius: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.p-offer__price-badge-text{
+  color: #fff;
+  font-size: var(--fs-point);
+  text-align: center;
+
+}
+
+.p-offer__price-free{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;  
 
 }
 
 .p-offer__price-yen--free {
   font-size: 52px;
   font-family: var(--font-en);
+  line-height: 1;
 
 }
 
 .p-offer__price-amount--free {
   font-size: 120px;
   font-family: var(--font-en);
-
+  line-height: 0.75;
+  font-style: italic;
 }
 
 .p-offer__bonus {
@@ -874,6 +908,7 @@ sections
   font-size: var(--fs-h3);
   text-align: center;
   letter-spacing: 0;
+  margin-top: 24px;
 
 }
 
@@ -884,8 +919,7 @@ sections
 }
 
 .p-offer__cta {
-  width: 100%;
-  text-align: center;
+  margin-top: 24px;
   
 }
 
@@ -894,6 +928,12 @@ sections
 }
 
 .p-offer__microcopy {
+
+}
+
+.p-offer .c-btn{
+  width: 100%;
+  text-align: center;
 
 }
 
