@@ -942,8 +942,70 @@ sections
 
 /* access */
 .p-access {
+  padding: 40px 0;
 
 }
+
+.p-access__logo {
+ display: flex;
+ justify-content: center;
+ margin-bottom: 40px;
+
+}
+
+.p-access__logo img{
+  display: block;
+  width: 120px;
+  
+}
+
+.p-access__title {
+  text-align: center;
+  font-size: var(--fs-h3);
+  color: var(--color-text-base);
+  font-weight: var(--fw-midium)
+
+}
+
+.p-access__info {
+  margin-top: ;
+  text-align: center;
+  margin: 40px 0;
+
+}
+
+.p-access__info-item {
+  margin-bottom: 24px;
+
+}
+
+.p-access__info-title {
+  color: var(--color-heading-ja);
+  font-size: var(--fs-small);
+  font-weight: var(--fw-regular);
+  margin-bottom: 8px;
+
+}
+
+.p-access__info-text {
+
+}
+
+.p-access__map {
+  height: 200px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.p-access__cta {
+
+}
+
+.p-access .c-btn{
+  margin-top: 24px;
+  width: 100%;
+}
+
 
 /* ============================================== 
 footer 
