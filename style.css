@@ -85,13 +85,14 @@ body ul{
 }
 
 .l-wrapper {
-    max-width: 375px;
+    width: 100%;
+    max-width: 480px;
     background-color: white;
-    /* display: flex;
-    justify-content: center; */
+    min-height:100vh;
     margin: 0 auto;
 
 }
+
 .container {
     padding: 0 20px;
 
@@ -133,7 +134,6 @@ body ul{
     padding: 8px 16px;
     font-size: 27px;
     font-weight: var(--fw-midium);
-    width: 80%;
     position: relative;
     display: inline-flex;
     align-items: center;
@@ -351,6 +351,16 @@ sections
     display: block;     
 
 }
+
+@media (min-width: 768px) {
+
+   .p-features__content {
+    padding: 0 48px;
+    max-width: 360px; 
+  }
+
+  }
+ 
 
 /* who it fits */
 .p-whoitfits {
@@ -1006,14 +1016,3 @@ sections
   width: 100%;
 }
 
-
-/* ============================================== 
-footer 
-============================================== */
-
-.footer-container {
-
-}
-.footer-content {
-
-}
